@@ -1,0 +1,1019 @@
+:root{
+  --color1:rgb(219,144,5);
+  --color2: rgba(23,180,83,.0788);
+  --color3:rgba(11,194,211,0.623);
+  --fondo: #f2f2f2;
+  --titulos: 33px;
+  --margenes: 60px;
+  --margenes2: 0px;
+  --espacios:10px;
+  --espacios-contenido:15px;   /*espacios bottom entre la linea anaranjada y el siguiente div*/
+  }
+
+
+  
+  .wave{
+    position: absolute;
+    top:650px;
+    margin-bottom: 0px;
+    bottom: 0%;
+    width: 100%;
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  body{    /*importante cuerpo de la pagina*/
+  font-family:'open sans';
+  background: var(--fondo);
+  
+  
+  }
+  img{
+    vertical-align: top;
+  }
+  
+  .hidden{
+    overflow: hidden;
+  }
+  .centrado{
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   background:  #000;
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .lds-facebook {
+      display: inline-block;
+      position: relative;
+      widows: 64px;
+      height: 64px;
+    }
+    .lds-facebook div {
+      display: inline-block;
+      position: absolute;
+      left: 6px;
+      width: 13px;
+      background: #cef;
+      animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+    .lds-facebook div:nth-child(1) {
+      left: 8px;
+      animation-delay: -0.24s;
+    }
+    .lds-facebook div:nth-child(2) {
+      left: 32px;
+      animation-delay: -0.12s;
+    }
+    .lds-facebook div:nth-child(3) {
+      left: 56px;
+      animation-delay: 0;
+    }
+    @keyframes lds-facebook {
+      0% {
+        top: 8px;
+        height: 64px;
+      }
+      50%, 100% {
+        top: 19px;
+        height: 32px;
+      }
+    }
+  
+  nav{
+    width: 100%;
+     z-index: 1;/*este posicionamiento hace que el  este por encima de os demas posicionamientos*/
+    position: fixed;  /*relacionado con el menu*/          
+  box-shadow: 0 0 10px 0 rgb(7, 58, 82);; /* bloque del*/
+  font-weight: 900;
+  /*color: #fff;*/
+  }
+  .nav1{
+
+    background: transparent;
+    height: 80px;
+   color: #fff;
+   font-weight: 900;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .nav2{
+  background: var(--fondo);
+  height: 90px;
+  color:rgb(7, 58, 82);/* color de enlaces cuando supera los 300*/
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+/****************************************SLIDR********************************/
+
+
+  
+
+
+
+
+  nav .enlaces a{ 
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 8px solid transparent; /*es lo que nos aparece bajo el menu la linea sombreada*/
+    color: inherit;
+    z-index: 1;
+    overflow: hidden;
+    
+  }
+  
+  nav .enlaces a:hover{
+    border-bottom: 1px  solid #303d32; 
+    transition: 0.6s;
+  overflow: hidden;
+  user-select: none;
+  }
+
+
+
+  .logo, .logo img{     /*PROPIO espacio de log en nav*/
+    height: 80px;
+    user-select: none;
+  }
+
+  .icono{
+    user-select: none;
+    display: none;
+    font-size: 40px;
+    padding: 23.5px 20px;
+  
+  }
+  .texto{   /* texto del header donde va mi nombre*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:  rgb(7, 58, 82);
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+  }
+  .texto>h1{
+    user-select: none;
+    font-size: 80px;
+    user-select: none;
+    font-weight: 900;  /* le da el contraste al texto*/
+    user-select: none;
+    color: #fff;
+  }
+  .texto>h2{
+    user-select: none;
+    font-size: 35px; 
+    font-weight: 300;
+    user-select: none;
+    font-weight: 900;  /* le da el contraste al texto*/
+    color: #fff;
+    
+  }
+
+
+  .texto>h4{
+    user-select: none;
+    font-size: 40px; 
+    font-weight: 300;
+    user-select: none;
+    font-weight: 300;  /* le da el contraste al texto*/
+  }
+
+
+
+  /*---------------------------------------------CONTENEDORES-----------------------------------------------*/
+ 
+  .contenedor2{ /*contenedor de la pagina */
+    user-select: none;
+    margin: auto;
+    padding: var(--margenes2)0; /*espacios entre nav del contenedor*/
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 15px;  /*espacios entre dive parte alta*/
+    padding-bottom: 20px;/*espacios entre dive parte baja*/
+    
+    }
+  .cajat{
+    user-select: none;
+width: 190px;
+height: auto;
+margin-left: 10px;
+margin-bottom: 20px;
+ text-align: center;
+
+
+  }
+  
+
+    .contenedor h3{ /*todos los h3 dentro del contenedor---------------------------*/
+      user-select: none;
+      font-size: var(--titulos);
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(7, 58, 82);
+      user-select: none;
+      padding-bottom: 0px;
+      font-weight: 900;  /* le da el contraste al texto*/
+      margin-top: 10px;
+      margin-bottom: 2px;
+      z-index: 1;
+    }
+    .contenedor h4{ /*todos los h3 dentro del contenedor---------------------------*/
+      user-select: none;
+      font-size: 15PX;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(7, 58, 82);
+      user-select: none;
+      padding-bottom: 0px;
+      font-weight: 900;  /* le da el contraste al texto*/
+      margin-top: 1px;
+      margin-bottom: 1px;
+      justify-content: center;
+      text-align: center;
+   flex-wrap: wrap;
+      z-index: 1;
+      width: 90%;
+    }
+    .contenedor h5{ /*todos los h3 dentro del contenedor---------------------------*/
+      user-select: none;
+      font-size: var(--titulos);
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #fff;
+      user-select: none;
+      padding-bottom: 0px;
+      font-weight: 900;  /* le da el contraste al texto*/
+      margin-top: 10px;
+      margin-bottom: 2px;
+      z-index: 1;
+    }
+
+
+
+    .contenedor h6{ /*todos los h3 dentro del contenedor*/
+      font-size: 15px;
+      user-select: none;
+      color: rgb(100, 76, 138);;
+      user-select: none;
+      padding-bottom: 0px;
+      font-weight: 900;  /* le da el contraste al texto*/
+      text-align: center;
+    }
+/* ******************CAJA**************** */
+
+      /* .textos8 a{
+        display: inline-block;
+        color:#fff;
+        font-weight: 300;
+        text-decoration: none;
+        margin-top: 30px;
+        border: 1px solid #fff;
+        width: 150px;
+        border-radius: 3px;
+        text-align: center;
+        padding: 10px 0;
+        animation: arriba 1s ease-in;
+    
+    } */
+  
+  .contenedor p{ /*todos los p dentro del contenedor*/
+    user-select: none;
+    z-index: -1;
+    font-size: var(--subtitulos);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: unset;
+    position: relative;
+    color: rgb(7, 58, 82);
+    user-select: none;
+    font-weight: 900;
+  padding-top: 0px;
+    }
+
+    .sabor{
+      user-select: none;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    .contenedor p2{ /*todos los p dentro del contenedor*/
+      user-select: none;
+      font-size: var(--subtitulos);
+      color: rgb(100, 76, 138);
+      user-select: none;
+      font-weight: 900;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+      }
+    
+  
+
+  .contenedor p1{ /*todos los p dentro del contenedor Nuestros servicios*/
+    font-size: var(--subtitulos);
+    user-select: none;
+    color: #fff;
+    user-select: none;
+    font-weight: 10000;
+  padding-top: 0px;
+  margin: auto;
+    }
+
+    
+/*-------------------------------------------LINEA NARANJA AFFTER NOSOTROS--------------------------------*/
+  .after::after{ /* agrega una caja despues de la clase after la linea que va debajo de los textos anaranjada*/
+z-index: -1;
+user-select: none;
+    content:'';
+  display: block;
+ margin-top: 1px;
+margin-left: auto;
+margin-right: auto;
+  width: 130px;/* no hace nada*/
+  user-select: none;  
+  height: 2px;/* no hace nada*/
+  background:  rgb(7, 58, 82);
+  margin-bottom: 1px;  /*espacios bottom entre la linea anaranjada y el siguiente div*/
+  }
+  .after2::after{ /* agrega una caja despues de la clase after la linea que va debajo de los textos anaranjada*/
+    content:'';
+    user-select: none;
+     display: block;
+     margin: auto;
+     margin-top: 1px;
+     width: 130px;/* no hace nada*/
+     user-select: none;  
+     height: 2px;/* no hace nada*/
+     background: rgb(7, 58, 82);
+     margin-bottom: 10px;  /*espacios bottom entre la linea anaranjada y el siguiente div*/
+
+  
+   
+     }
+
+
+
+  .card{
+    user-select: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+   overflow: auto;
+   color: var(--fondo);
+
+  }
+  
+  
+  .people{    /* algo relacionado con las imagenes y los textos que van en las cajas de las img*/
+    user-select: none;
+    height: 70%;/*espacios que queda para escribir el texto debajo de la caja del equipo*/
+  padding-bottom: 0px;
+  }
+  .content-card img{   /* medidas de las cajas de las imamgenes y sus espacios*/
+    width: 100%;/*tamaño de las imagenes que estan dentro de la caja de peolple en trabajo clase*/
+    height: 100%;
+    user-select: none;
+    object-fit: cover;
+  }
+  .texto-team{
+    user-select: none;
+    height: 20%;
+    width: 100%;
+    padding: var(--espacios)0;
+  }
+  /*--------------------------------------------------------ABOUT--------------------------------------------
+  -----------------------------------------------------------------------------------------------------------*/
+  .about{ /*todo lo que va en el contenedor de nuestra calidad*/
+    width: 100%;
+    height: 100px;
+    user-select: none;
+    background: linear-gradient(to bottom,
+    rgba(211,135,20,.6),
+    rgba(29,241,171,.6),
+    rgba(7,109,150,.45)
+    ),url(img/teclado.jpg);  /*por eso se ve asi el header con colores sombreados*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;/*para que abarque toda la pantalla*/
+  
+   
+    height: 535PX;  /*ALTURA CAJA DE SERVICIOS*/
+  
+  
+  
+    }
+    .about2{ /*CONTENEDOR INDEPENDIENTE  DE NOSOTROS */
+      user-select: none;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to bottom,
+      rgba(211,135,20,.6),
+      rgba(29,241,171,.6),
+      rgba(7,109,150,.45)
+      ),url(img/teclado.jpg);  /*por eso se ve asi el header con colores sombreados*/
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;/*para que abarque toda la pantalla*/
+    
+     
+      height: 750PX;  /*ALTURA CAJA DE SERVICIOS*/
+    
+    
+    
+      }
+ 
+/*--------------------------------------------------------TEXTO DE NOSOTROS--------------------------------------------
+  -----------------------------------------------------------------------------------------------------------*/
+
+  .contenedor n{ /*todos los p dentro del contenedor*/
+    font-size: var(--subtitulos);
+    color: #000;
+    user-select: none;
+    font-weight: 900;
+  padding-top: 1px;
+  user-select: none;
+    }
+
+
+
+  .servicios{
+    user-select: none;
+  display: flex;
+  color: rgb(247, 243, 243);
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  margin-top: 60px;
+  }
+  
+  .caja-servicios>h4{
+
+    user-select: none;
+  user-select: none;
+  font-weight: 300;  /* le da el contraste al texto*/
+  font-size: 30px;
+  flex-wrap: wrap;
+
+
+
+  
+  }
+  .caja-servicios>p{
+    user-select: none;
+    text-align: right;
+  }
+  .caja-servicios{
+    user-select: none;
+    width: 33%;
+         height: 200px;
+         object-fit: cover;
+   
+       }
+  
+       .botones-work{
+        overflow: hidden;
+        user-select: none;
+        user-select: none;
+        align-content: center;
+        justify-content: center;
+        user-select: none;
+    
+      }
+  .botones-work li{
+    user-select: none;
+    width: 130px;/*medidas del ancho de los botones*/
+  display: inline-block;
+  text-align: center;
+  margin-left: var(--espacios);
+  margin-bottom: var(--espacios-contenido);
+  padding: 3px 3px;
+  border: 1px solid  rgb(7, 58, 82);
+  list-style: none;
+  color:  rgb(7, 58, 82);
+  margin-left: 5px ;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  user-select: none;
+  background: var(--fondo);
+  font-weight: 400;
+  
+  }
+  .botones-work h1{
+    user-select: none;
+    font-size: 50px;
+    color: #fff;
+    align-content: center;
+    margin-bottom: 100px;
+  }
+  .botones-work li:hover{
+    user-select: none;
+  background:  rgb(7, 58, 82);
+  color:#fff;
+  cursor: pointer;
+  user-select: none;
+ 
+  
+  }
+  
+  .botones-work .active{
+    user-select: none;
+  background:rgb(7, 58, 82);
+  color:#fff;
+
+  user-select: none;
+  
+  
+  }
+  .galeria-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 100PX;
+    width: 100%;
+    }
+    .galeria-work .cont-work {
+      width: 31%;
+      box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
+      height: 250px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      margin: auto;
+      margin-bottom: 1000px;
+      border-radius: 15px;
+  }
+      .galeria-work .nuevo{ /* caja de galeria de iconos*/
+        user-select: none;
+        display: inline-block;
+        width: 200px;   /*ancho de la caja de la imagen de seleccion*/
+        height: 200px;/*Alto de la caja de la imagen de seleccion*/
+        box-shadow: 0 5px 20px 2px  rgb(7, 58, 82); /*2 es contraste de la sombra--20 sombra al rededor de los cuadros*/
+        overflow: auto;  /*pone el scroll automaticamente segun el contenido de la caja*/
+        scroll-margin: 50%;
+        background: var(--color2);
+      /*espacios entre cuadros de imagenes work de seleccion*/
+        object-fit: cover;
+        user-select: none;
+        margin-left: 2px ;
+        margin-top: 0px;
+       margin-right: 2px;
+        }
+      .img-work{    /*acercar la imagen en la caja sube tambie el titulo*/
+        user-select: none;
+      height: 100%;
+      width: 100%;
+      }
+    
+      /*__________________________________caja de galeria______________________*/
+      
+      .img-work img{   /*imagen dentro de la caja work*/
+        user-select: none;
+      height: 250px;  /*imagen*/
+      width:100%;
+    padding-left: 5px;/*desplazamiento de la imgen dentro del cuadro*/
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+     /*__________________________________caja de galeria______________________*/
+      }
+  .texto-work{
+    user-select: none;
+    height: 10;
+  
+  }
+  .texto1 .p{
+    user-select: none;
+    text-align: center;
+    color: var(--color1);
+    line-height: 30px;
+    font-weight: 300;
+    user-select: none;
+    font-weight: 900;  /* le da el contraste al texto*/
+  }
+
+ 
+  .footer{
+    background: url(img/teclado.jpg);
+    user-select: none;
+    height: 535px;
+    width: 100%;
+    padding: var(--margenes2)0; /*espacios entre nav del contenedor*/
+    width: 100%;
+    max-width: 1500px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 15px;  /*espacios entre dive parte alta*/
+    padding-bottom: 20px;/*espacios entre dive parte baja*/
+  }
+
+
+
+/***********************************************MARCA log************************************************/
+
+
+footer2{background: peachpuff;}
+
+
+  .iconos{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 1;
+    margin-top: 100px;
+    user-select: none;
+    user-select: none;
+  
+  }
+  .fab{
+    font-size: 100px;
+    user-select: none;
+    color: #fff;
+    margin: auto;
+    display: inline-block;
+  
+  }
+  footer p{
+    margin-top: var(--espacios);
+  }
+/*-----------------------------------------------------------CAROUSEL-----------------------------------------*/
+
+
+.titulo {
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 40px;
+  color: #fff;
+  user-select: none;
+}
+
+.subtitulo {
+  margin: 0;
+  color: #000;
+  display: inline;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.sabor { 
+  color: #fff;
+  margin: 7px 0;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0;
+  user-select: none;
+}
+
+.linea-division {
+  width: 10%;
+  height: 2px;
+  background-color: #36221c;
+  user-select: none;
+}
+.carousel{
+  min-height: 300px;/*alto minimo*/
+  user-select: none;
+}
+
+.carousel .carousel-item img{  /* contenedor de los textos acceder a la imagen que se encuentra dentro*/
+  width: 100%;  user-select: none;
+  height: 100%;
+  object-fit: cover;/*hace que la imagen no se deforme*/
+  position: fixed;/*para poner de fondo la imagen*/
+  top: 0;/*cero arriba coordenadas*/
+  left: 0;/*cero a la izquierda*/
+  z-index: -1;/*mandar la imagen al fondo detras de los textos ñlos textos tienen cero por defecto en el navegador*/
+  border-radius: 15px;/*bordes redondeados*/
+  user-select: none;
+}
+.carousel .indicators .indicator-item{
+   border-radius: 0;/*darle estilo de romboy a los indicadores*/
+   transform:rotate(45deg);/*  rotarlo 45 grados*/
+   margin: 0 15;/*0 arriba y abajo-15 hacia los costados*/
+   background: rgb(7, 58, 82);/*fondo*/
+   user-select: none;
+
+}
+.carousel2{overflow:hidden;
+
+  width:100%;
+  height:400px;
+  -webkit-perspective:500px;
+  perspective:500px;
+  -webkit-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-transform-origin:0% 50%;
+  transform-origin:0% 50%
+}
+  
+ 
+ /*******************************************************+CAROUSEL++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************+MISION******************************************/
+
+
+.espacio2{
+  height: 10px;
+}
+
+n {
+  font-size: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+ 
+}
+
+.three-columns {
+  
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
+
+
+.box {
+    overflow: hidden;
+    justify-content: center;
+}
+
+.content {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: justify;  
+    text-align-last: center;
+
+
+  }
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.left .content {
+    border-right: 5px solid #4BB495  ;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+
+ @media screen and (max-width: 700px){
+
+
+  .nav2{
+    color: #fff; 
+  }
+
+  .icono{
+    display: block;
+    cursor: pointer;
+    }
+
+
+    .fab{
+      font-size: 65px;
+      color: #fff;
+      margin: auto;
+      display: inline-block;
+    
+    }
+    .enlaces{
+      position:fixed;
+      top: 80px;
+       background: linear-gradient(to bottom,
+      rgba(211, 135, 20, 0.253),
+      rgba(29, 241, 170, 0.274),
+      rgba(7, 109, 150, 0.274)
+      ),url(img/teclado2.jpg); 
+      opacity: 0.9; /*hace el div semitransparente*/
+      left: 0;
+      height: 100%;
+      transition: 1s;
+      width: 0;
+      overflow: hidden;
+      color: #fff;
+      
+    }
+
+    .enlaces a{     /*bloques del menu*/
+      display: flex;
+      user-select: none;
+      width: 100%;
+      height: 55px;
+      padding: 10px;
+      text-align: center;
+      background: rgba(7, 58, 82, 0.787); 
+    overflow: hidden;
+      
+    }
+ .caja-servicios>h4{
+ 
+  margin-bottom: var(--espacios);
+  user-select: none;
+  font-weight: 300;  /* le da el contraste al texto*/
+  font-size: 30px;
+  flex-wrap: wrap;
+  }
+  .img-work img{   /*imagen dentro de la caja work*/
+    height: 250px;  /*imagen*/
+    width: 200px;
+  padding-left: 5px;/*desplazamiento de la imgen dentro del cuadro*/
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  }
+
+  
+   /*__________________________________caja de galeria______________________*/
+    
+   .texto>h1{
+    font-size: 80px;
+    user-select: none;
+    font-weight: 900;  /* le da el contraste al texto*/
+    user-select: none;
+    color: #fff;
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+
+:root{
+  --margenes:30px;
+}
+ }
+ 
+ @media screen and (max-width: 480px){
+
+
+  .contenedor h3 {
+    user-select: none;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(7, 58, 82);
+    user-select: none;
+    padding-bottom: 0px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    z-index: 1;
+}
+  .content {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: justify;  
+    text-align-last: center;
+  }
+
+
+   .logo, .logo img{height: 90px;}
+
+  .nav2{
+    color: rgb(7, 58, 82); ;
+  }
+  .nav{
+    color: #fff ;
+  }
+ 
+
+  .after::after{ /* agrega una caja despues de la clase after la linea que va debajo de los textos anaranjada*/
+    content:'';
+     display: block;
+    margin-top: 1px;
+   margin-left: auto;
+   margin-right: auto;
+     width: 100px;/* no hace nada*/
+     user-select: none;  
+     height: 2px;/* no hace nada*/
+     background:  rgb(7, 58, 82);
+     margin-bottom: 1px;  /*espacios bottom entre la linea anaranjada y el siguiente div*/
+     }
+
+  
+  .fab{
+    font-size: 50px;
+    color: #fff;
+    margin: auto;
+    display: inline-block;
+  
+  }
+  .contenedor h5{ /*todos los h3 dentro del contenedor---------------------------*/
+    font-size: 8px;
+  }
+ 
+  
+  
+  .enlaces{
+    position:fixed;
+    top: 80px;
+    background: linear-gradient(to bottom,
+                rgba(211, 135, 20, 0.253),
+                rgba(29, 241, 170, 0.274),
+                rgba(7, 109, 150, 0.274)
+                ),url(img/teclado2.jpg); 
+    opacity: 0.9; /*hace el div semitransparente*/
+    left: 0;
+    height: 100%;
+    transition: 1s;
+    width: 0;
+    overflow: hidden;
+    color: #fff;
+  }
+  .botones-work li{
+    width: 50%;/*medidas del ancho de los botones*/
+    margin-bottom: 1px;
+  }
+  
+  .nav2{
+    color: rgb(7, 58, 82); 
+  }
+  .nav{
+    color: #fff ;
+  }
+  .icono{
+    display: block;
+    cursor: pointer;
+    }
+ 
+ .enlaces a{
+   display: block;
+   width: 100%;
+   height: 50px;
+   padding: 20px;
+   text-align: center;
+   background: rgb(7, 58, 82);
+   color: rgb(172, 13, 13);
+   overflow: hidden;
+ }
+
+ .caja-servicios>h4{
+
+  margin-bottom: var(--espacios);
+  user-select: none;
+  font-weight: 300;  /* le da el contraste al texto*/
+  font-size: 15px;
+  flex-wrap: wrap;
+
+  }
+
+  .img-work img{   /*imagen dentro de la caja work*/
+    height: 100%;  /*imagen*/
+    width: 100%;
+  padding-left: 5px;/*desplazamiento de la imgen dentro del cuadro*/
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+   /*__________________________________caja de galeria______________________*/
+    }
+    .texto>h2{
+      font-size: 25px; 
+      user-select: none;
+      font-weight: 900;  /* le da el contraste al texto*/
+      color: #fff;
+      
+    }
+
+    
+   
+  }
+

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UFT-8">
+  <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pagina web completa</title>
+<!------------carousel----------------------------------------------->
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- CSS Estilos -->
+<link rel="stylesheet" href="css/estilos.css">
+
+<!----------------------------------------------------------------------->
+
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://kit.fontawesome.com/a52eac5a20.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="hidden">
+  <div class="centrado" id="onload">
+  <div class="lds-facebook"><div></div><div></div><div></div></div>
+  </div>
+
+  
+    <header>
+      <nav id="nav" class="nav1">  
+      <div class="contenedor-nav">
+        <div class="logo">
+          <img src="img/logo.jpg"alt="">
+        </div>
+        <div class="enlaces" id="enlaces">
+          <a href="#" id="enlace-inicio" class=" header">Inicio</a>
+          <a href="#" id="enlace-equipo" class="header">Equipo</a>
+          <a href="#" id="enlace-trabajo" class=" header">Trabajo</a>
+          <a href="#" id="enlace-contacto" class=" header">Contacto</a>
+          <a href="#" id="enlace-servicios" class=" header">Servicios</a>
+        </div>
+        <div class="icono" id="open"> 
+        <span>&#9776;</span>
+  </div>
+  </div> 
+  </nav>
+  
+
+  <div class="texto">
+    <h1>HenrySP desing</h1>
+      <h2>agencia de desarrollo web</h2>
+    </div>
+
+
+  </header>
+  <main>
+    <section class="team contenedor" id="equipo">
+      <h3>nuestros diseños</h3>
+      <p class="after">conoce a la gente asombrosa y creativa</p>
+
+          <div class="people">      
+            <img src="img/people1.jpg" alt="">
+          </div>
+          <div class="texto-team">
+            <h4>k</h4>
+            <p>lorem ipsum dolor sit</p>
+          </div>
+     
+
+    </section>
+    <section class="about" id="servicio">---
+      <div class="contenedor">
+        <h3>nuestro servicios</h3>
+          <p class="after">siempre mejorando para ti</p>
+      <div class="servicios">
+      <div class="caja-servicios">
+        <img src="img/heart.png"alt="">
+        <h4>Diseño y desarrollo web</h4>
+        <p>HTML5</p>
+      </div>
+      <div class="caja-servicios">
+        <img src="img/heart1.png"alt="">
+        <h4>Diseño adaptable</h4>
+        <p>JavaScript</p>
+      </div>
+      <div class="caja-servicios">
+        <img src="img/heart2.png"alt="">
+        <h4>efectos avanzados</h4>
+        <p>CCS3</p>
+      </div>
+      </div>
+      </div>
+    </section>
+  
+    <section class="work contenedor"id="trabajo">
+      <h3>nuestros diseños</h3>
+      <p class="after">hacemos de algo simple algo extraordinario
+        <div class="botones-work">
+          <u1>
+            <li class="filter "data-nombre='enlaces'>Enlaces</li>
+            <li class="filter"data-nombre='diseño'>Diseño</li>
+            <li class="filter"data-nombre='programacion'>Programacion</li>
+            <li class="filter"data-nombre='marketing'>Marketing</li>
+          </u1>
+        </div>
+
+        <div class="galeria-work">
+          <div class="cont-work enlaces">
+            <div class="img-work">
+              <img src="img/programacion1.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>programacion</h4>
+            </div>
+          </div>
+          <div class="cont-work enlaces">
+            <div class="img-work">
+              <img src="img/programacion2.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>programacion</h4>
+            </div>
+          </div>
+          <div class="cont-work enlaces">
+            <div class="img-work">
+              <img src="img/programacion3.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>programacion</h4>
+            </div>
+          </div>
+          
+
+
+        <div class="galeria-work">
+          <div class="cont-work programacion">
+            <div class="img-work">
+              <img src="img/programacion1.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>programacion</h4>
+            </div>
+          </div>
+          <div class="cont-work programacion">
+            <div class="img-work">
+              <img src="img/programacion2.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>programacion</h4>
+            </div>
+          </div>
+          <div class="cont-work programacion">
+            <div class="img-work">
+              <img src="img/programacion3.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>programacion</h4>
+            </div>
+          </div>
+          
+          <div class="galeria-work">
+            <div class="cont-work diseño">
+              <div class="img-work">
+                <img src="img/diseño2.jpg" alt="">
+              </div>
+              <div class="textos-work">
+                <h4>diseño</h4>
+              </div>
+            </div>
+          <div class="cont-work diseño">
+            <div class="img-work">
+              <img src="img/diseño2.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>diseno</h4>
+            </div>
+          </div>
+          <div class="cont-work diseño">
+            <div class="img-work">
+              <img src="img/diseño3.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>diseno</h4>
+            </div>
+          </div>
+          <div class="galeria-work">
+          <div class="cont-work marketing">
+            <div class="img-work">
+              <img src="img/marketing1.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>marketing</h4>
+            </div>
+          </div>
+          <div class="cont-work marketing">
+            <div class="img-work">
+              <img src="img/marketing2.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>marketing</h4>
+            </div>
+          </div>
+          <div class="cont-work marketing">
+            <div class="img-work">
+              <img src="img/marketing3.jpg" alt="">
+            </div>
+            <div class="textos-work">
+              <h4>marketing</h4>
+            </div>
+          </div>
+        </div>
+      </p>
+    </section>
+
+          
+<div class="container">
+  <div class="row">
+<div class="col s12">
+  <div class="contenedor">
+   <h3>selecciona en nuestro brouchure</h3>
+          <div class="carousel center-align">
+              <div class="carousel-item">
+                  <h2 class="subtitulo">HenrySP Design</h2>
+                  <div class="linea-division"></div>
+                  <p class="sabor">Glasseadas</p>
+                  <img src="img/compra1.jpg"alt=""
+              </div>
+            
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">Compra online</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/compra2.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/compra3.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/diseño1.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/diseño2.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/diseño3.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/marketing1.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/marketing2.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/marketing3.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/programacion1.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/programacion2.jpg"alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <h2 class="subtitulo">donas</h2>
+                      <div class="linea-division"></div>
+                      <p class="sabor">Glasseadas</p>
+                      <img src="img/programacion3.jpg"alt="">
+                  </div>
+          </div>
+  </div>
+  </div>
+  </div>
+</main>
+<!-------------------------------------------------------------->
+
+
+<section class="team contenedor" id="equipo">
+  <h3>nuestros diseños</h3>
+  <p class="after">conoce a la gente asombrosa y creativa</p>
+
+      <div class="people">      
+        <img src="img/people1.jpg" alt="">
+      </div>
+      <div class="texto-team">
+        <h4>k</h4>
+        <p>lorem ipsum dolor sit</p>
+      </div>
+ 
+
+</section>
+    <section class="team contenedor" id="equipo"></section>
+<section class="about" id="servicio">---
+  <div class="contenedor">
+    <h3>nuestro servicios</h3>
+      <p class="after">siempre mejorando para ti</p>
+  <div class="servicios">
+  <div class="caja-servicios">
+    <img src="img/heart.png"alt="">
+    <h4>Diseño y desarrollo web</h4>
+    <p>HTML5</p>
+  </div>
+  <div class="caja-servicios">
+    <img src="img/heart1.png"alt="">
+    <h4>Diseño adaptable</h4>
+    <p>JavaScript</p>
+  </div>
+  <div class="caja-servicios">
+    <img src="img/heart2.png"alt="">
+    <h4>efectos avanzados</h4>
+    <p>CCS3</p>
+  </div>
+  </div>
+  </div>
+</section>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script src="filtro.js"></script>
+
+  
+       
+
+</body>
+
+</html>
